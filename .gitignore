@@ -1,0 +1,6 @@
+# Ignore Codesandbox files
+.codesandbox/
+.devcontainer/
+
+# Ignore Yarn lock file
+yarn.lock

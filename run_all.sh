@@ -51,5 +51,5 @@ sleep 2
 
 echo ""
 echo "==========================================="
-echo "✅ Setup Complete! Services Running..."
+echo "✅ Setup Complete! Services Running... "
 echo "==========================================="
