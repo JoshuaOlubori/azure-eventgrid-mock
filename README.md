@@ -1,5 +1,18 @@
-# Python Starter
+# 📨 Event-Driven Architecture: Local Event Grid Simulation
 
-Quickly get started with [Python](https://www.python.org/) using this starter! 
+This project simulates **Azure Event Grid** on a **local machine** using Flask. It mimics the event-driven communication between microservices, including:
 
-- If you want to upgrade Python, you can change the image in the [Dockerfile](./.devcontainer/Dockerfile).
+✅ **Event Broker** (Mimics Azure Event Grid)  
+✅ **Order Processing Service** (Processes new orders)  
+✅ **Email Notification Service** (Sends emails on new orders)
+
+---
+
+## ⚙️ **System Architecture**
+
+```mermaid
+graph TD;
+    A[New Order Service] -->|Publishes Event| B(Event Broker);
+    B -->|Forwards Event| C(Order Processing Service);
+    B -->|Forwards Event| D(Email Notification Service);
+```
