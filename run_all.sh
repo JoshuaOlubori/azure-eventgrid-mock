@@ -6,6 +6,11 @@ echo "==========================================="
 lsof -ti :5000 -ti :5001 -ti :5002 | xargs kill -9 2>/dev/null || true
 sleep 1
 
+echo "==========================================="
+echo "🚀 Installing dependencies..."
+echo "==========================================="
+python3 -m pip install -r requirements.txt
+
 echo ""
 echo "==========================================="
 echo "🚀 Starting Event Broker on Port 5000..."
